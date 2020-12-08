@@ -21,3 +21,5 @@ Route::get('/login', function () {
 
 Route::Post("/login",'UserController@login');
 Route::get("/",'ProductController@index');
+Route::get("detail/{id}",'ProductController@details');
+Route::get("search",'ProductController@search');

@@ -15,18 +15,18 @@ class ProductSeeder extends Seeder
         //
         DB::table('products')->insert([
                [
-                'name'=>'oppo A5',
-                'price'=>'100$',
+                'name'=>'Redmi',
+                'price'=>'120$',
                 'discription'=>'A samrtphone with 4 gb ram with much more',
                 'category'=>'mobile',
-                'gallery'=>'https://images-na.ssl-images-amazon.com/images/I/71wPwmxo2NL._SX679_.jpg',   
+                'gallery'=>'https://global.appmifile.com/webfile/globalimg/samantha/E7T/E7T-BLUE.jpg',   
                ],
                [
-                'name'=>'One Plus',
-                'price'=>'300$',
+                'name'=>'sony',
+                'price'=>'150$',
                 'discription'=>'A samrtphone with 8 gb ram with much more',
                 'category'=>'mobile',
-                'gallery'=>'https://cdn.dxomark.com/wp-content/uploads/medias/post-47840/oneplus8Pro.jpg',     
+                'gallery'=>'https://www.gizmochina.com/wp-content/uploads/2020/02/Sony-Xperia-10-II-1-500x500.jpg',     
                ],
                
             ]);
