@@ -31,6 +31,10 @@ img.slider-img
     height:400px !important;
 
 }
+.bg-color
+{
+    background-color:red;
+}
 .custom-product
 {
     height:600px;
@@ -59,6 +63,16 @@ img.slider-img
 .search-box
 {
     width:500px  !important;
+}
+.cart-list-divider
+{
+    border-bottom:1px solid  #ccc;
+    margin-bottom:20px;
+    padding-bottom:20px;
+}
+.order-btn
+{
+    margin-left:3%;
 }
 </style>
 </html>

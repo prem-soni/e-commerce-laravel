@@ -24,8 +24,16 @@ Route::get('/logout', function () {
     return redirect('login');
 });
 
+Route::view('/register','register');
+Route::Post('/register','UserController@Register');
+
 Route::Post("/login",'UserController@login');
 Route::get("/",'ProductController@index');
 Route::get("detail/{id}",'ProductController@details');
 Route::get("search",'ProductController@search');
 Route::post("add_to_cart",'ProductController@addToCart');
+Route::get("cartlist",'ProductController@cartlist');
+Route::get("removecart/{id}",'ProductController@removeCart');
+Route::get("ordernow",'ProductController@orderNow');
+Route::post("orderplace",'ProductController@orderPlace');
+Route::get("myorders",'ProductController@myOrders');

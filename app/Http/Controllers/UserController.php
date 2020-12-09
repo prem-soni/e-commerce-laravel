@@ -19,4 +19,26 @@ class UserController extends Controller
              return redirect('/');
         }
     }
+    function Register(Request $req)
+    {
+        //return $req->input();
+
+        //$user->password=$req->password;
+        //$user->cpassword=$req->cpassword;
+         if($req->password==$req->cpassword)
+         {
+             
+             $user = new User;
+             $user->name=$req->name;
+             $user->email=$req->email;
+             $user->password=Hash::make($req->password);
+             //return $req->input();
+             $user->save();
+         }
+         else
+         {
+             return "password and confirm password is not same";
+         }
+          return  redirect('/login');
+    }
 }
